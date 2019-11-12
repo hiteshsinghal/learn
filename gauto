@@ -5,5 +5,4 @@ set timout -1
 
 spawn ./gscript.sh
 expect "Username for 'https://github.com': "
-echo "asd"
-send -- "hiteshsinghal@gmail.com\r"
+"hiteshsinghal@gmail.com\r"
