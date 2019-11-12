@@ -1,12 +1,13 @@
 #! /bin/bash
 
-echo “Enter the directory name”
-read $dirname
+echo "Enter the directory name"
+read direc
 
-if [ -d $dirname ]
+if [ -d "$direc" ]
 then
-    echo “Creating Directory”
-    mkdir $dirname
+    echo "Directory already exists"
 else
-   echo “Directory already exists”
+   echo "Directory doesnot exists"
+   echo "Creating directory"
+   mkdir -p "$direc"
 fi
