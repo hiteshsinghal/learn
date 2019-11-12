@@ -1,6 +1,7 @@
 #! /usr/bin/expect -f
 
 
+set timout -1
 
 spawn ./gscript.sh
 expect "Username for 'https://github.com': "
