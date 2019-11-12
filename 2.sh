@@ -1,18 +1,18 @@
 #! /bin/bash
 
-select car in BMW TOYOTA HUNDAI HONDA
+echo "Press any key to terminate"
+while [ true ]
 do
-	case $car in 
-	BMW)
-		echo "BMW is selected";;
-	TOYOTA)
-		echo "TOYOTA is selected";;		
-	HUNDAI)
-		echo "HUNDAI is selected";;
-	HONDA)
-		echo "HONDA is selected";;
-	*)
-		echo "Please select between 1 to 4";;
-	esac
+	read -t 3 -n 1 -s
+	if [ $? == 0 ]
+	then
+		echo "Terminating the Program"
+		break
+	else
+		echo "Press any key to terminate"
+	fi
+
 done
+
+
 
