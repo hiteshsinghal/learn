@@ -1,4 +1,5 @@
 git add .
 git commit -m $1
 git push origin master
-echo "hiteshsinghal@gmail.com"
+expect "Username for 'https://github.com':" 
+send "hiteshsinghal@gmail.com"
