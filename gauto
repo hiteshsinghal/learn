@@ -6,5 +6,7 @@ set timout -1
 spawn ./gscript.sh
 expect "Username"
 send "hiteshsinghal@gmail.com\r"
+expect "Password"
+send "Admin@1234."
 
 expect eof
