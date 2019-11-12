@@ -1,13 +1,4 @@
 #! /bin/bash
 
-echo "Enter the directory name"
-read direc
-
-if [ -d "$direc" ]
-then
-    echo "Directory already exists"
-else
-   echo "Directory doesnot exists"
-   echo "Creating directory"
-   mkdir -p "$direc"
-fi
+url="https://www.w3.org/TR/PNG/iso_8859-1.txt"
+curl $url > file.txt
